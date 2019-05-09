@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.wordpress.android.R;
 import org.wordpress.android.e2e.pages.PostsListPage;
+import org.wordpress.android.e2e.pages.SitePickerPage;
 import org.wordpress.android.support.BaseTest;
 import org.wordpress.android.support.DemoModeEnabler;
 import org.wordpress.android.ui.WPLaunchActivity;
@@ -58,6 +59,8 @@ public class WPScreenshotTest extends BaseTest {
 
         wpLogin();
 
+        Screengrab.screenshot("1-build-and-manage-your-website");
+
         editBlogPost();
         manageMedia();
         navigateStats();
@@ -71,11 +74,20 @@ public class WPScreenshotTest extends BaseTest {
         // Get a screenshot of the post editor
         screenshotPostWithName("Summer Band Jam", "1-PostEditor", true);
 
-        // Get a screenshot of the drafts feature
-        screenshotPostWithName("Ideas", "5-DraftEditor", false);
+        // Choose the "sites" tab in the nav
+        clickOn(R.id.nav_sites);
+
+        // Choose "Switch Site"
+        clickOn(R.id.switch_site);
+
+        (new SitePickerPage()).chooseSiteWithURL("infocusphotographers.com");
 
         // Get a screenshot of the writing feature (without image)
-        screenshotPostWithName("Time to Book Summer Sessions", "6-Writing", true);
+        String name = "2-create-beautiful-posts-and-pages";
+        screenshotPostWithName("Time to Book Summer Sessions", name, true);
+
+        // Get a screenshot of the drafts feature
+        screenshotPostWithName("Ideas", "6-capture-ideas-on-the-go", false);
 
         // Exit back to the main activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
@@ -112,7 +124,8 @@ public class WPScreenshotTest extends BaseTest {
 
         waitForElementToBeDisplayedWithoutFailure(R.id.media_grid_item_image);
 
-        takeScreenshot("4-media");
+        Screengrab.screenshot("5-share-from-anywhere");
+
         pressBackUntilElementIsDisplayed(R.id.row_media);
     }
 
@@ -123,7 +136,8 @@ public class WPScreenshotTest extends BaseTest {
         waitForAtLeastOneElementWithIdToBeDisplayed(R.id.note_content_container);
         waitForImagesOfTypeWithPlaceholder(R.id.note_avatar, ImageType.AVATAR);
 
-        takeScreenshot("3-notifications");
+
+        Screengrab.screenshot("4-check-whats-happening-in-real-time");
 
         // Exit the notifications activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
@@ -136,7 +150,8 @@ public class WPScreenshotTest extends BaseTest {
 
         // Wait for the stats to load
         waitForAtLeastOneElementWithIdToBeDisplayed(R.id.stats_block_list);
-        takeScreenshot("2-stats");
+
+        Screengrab.screenshot("3-track-what-your-visitors-love");
 
         // Exit the Stats Activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
