@@ -1,7 +1,10 @@
 GIT
   remote: https://github.com/wordpress-mobile/release-toolkit
-  revision: 5ac7ad7e1e1b447cd2cfdd992da7260a23479f9e
-  branch: integrate-screenshot-tool
+  revision: 4cb483edb43270ce77fb867332296820549236df
+  specs:
+
+PATH
+  remote: ../release-toolkit
   specs:
     fastlane-plugin-wpmreleasetoolkit (0.1.9)
       diffy (~> 3.3)
@@ -115,11 +118,11 @@ GEM
     naturally (2.2.0)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
-    octokit (4.13.0)
+    octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     options (2.3.2)
     os (1.0.0)
-    parallel (1.14.0)
+    parallel (1.17.0)
     plist (3.4.0)
     progress_bar (1.3.0)
       highline (>= 1.6, < 3)
@@ -133,12 +136,12 @@ GEM
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
     retriable (3.1.2)
-    rmagick (3.0.0)
+    rmagick (3.1.0)
     rouge (2.0.7)
     rubyzip (1.2.2)
-    sawyer (0.8.1)
-      addressable (>= 2.3.5, < 2.6)
-      faraday (~> 0.8, < 1.0)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
     security (0.1.3)
     signet (0.11.0)
       addressable (~> 2.3)

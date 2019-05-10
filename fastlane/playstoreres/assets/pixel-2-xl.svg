@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="998px" height="2080px" viewBox="0 0 998 2080" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Devices/Pixel 2XL Export</title>
+<svg width="833px" height="1708px" viewBox="0 0 833 1708" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>pixel-xl-frame</title>
     <desc>Created with Sketch.</desc>
-    <g id="Devices/Pixel-2XL-Export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group">
-            <rect id="Body" stroke="#204A69" stroke-width="15.18" fill="#204A69" x="-7.59" y="-7.59" width="1013.18" height="2095.18" rx="96.14"></rect>
-            <rect id="Speaker" fill="#23354B" x="308.784119" y="32.8953771" width="379.652605" height="22.7737226" rx="11.3868613"></rect>
-            <ellipse id="Camera" fill="#23354B" cx="139.205955" cy="80.973236" rx="20.248139" ry="20.243309"></ellipse>
-            <rect id="Microphone" fill="#23354B" x="308.784119" y="2024.3309" width="379.652605" height="22.7737226" rx="11.3868613"></rect>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Android---Build-Copy" transform="translate(-124.000000, -212.000000)">
+            <g id="Devices/Pixel-2XL-Dark-Blue-Copy" transform="translate(124.000000, 212.000000)">
+                <g id="Group">
+                    <rect id="Body" fill="#23354B" x="0" y="0" width="833" height="1708" rx="116"></rect>
+                    <rect id="Speaker" fill="#1D232F" x="261.856477" y="38.733572" width="307.039437" height="18.4173855" rx="9.20869277"></rect>
+                    <ellipse id="Camera" fill="#1D232F" cx="124.712195" cy="77.6147193" rx="16.3754367" ry="16.3710094"></ellipse>
+                    <rect id="Microphone" fill="#1D232F" x="261.856477" y="1649.23162" width="307.039437" height="18.4173855" rx="9.20869277"></rect>
+                </g>
+            </g>
         </g>
     </g>
 </svg>

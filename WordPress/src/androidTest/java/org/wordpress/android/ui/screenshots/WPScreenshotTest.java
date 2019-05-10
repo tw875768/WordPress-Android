@@ -84,7 +84,7 @@ public class WPScreenshotTest extends BaseTest {
 
         // Get a screenshot of the writing feature (without image)
         String name = "2-create-beautiful-posts-and-pages";
-        screenshotPostWithName("Time to Book Summer Sessions", name, true);
+        screenshotPostWithName("Time to Book Summer Sessions", name, false);
 
         // Get a screenshot of the drafts feature
         screenshotPostWithName("Ideas", "6-capture-ideas-on-the-go", false);
@@ -108,6 +108,8 @@ public class WPScreenshotTest extends BaseTest {
 
         // Wait for the editor to load all images
         idleFor(5000);
+
+        clickOn(R.id.post_title);
 
         if (hideKeyboard) {
             Espresso.closeSoftKeyboard();
