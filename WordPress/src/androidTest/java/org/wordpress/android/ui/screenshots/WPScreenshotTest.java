@@ -130,6 +130,9 @@ public class WPScreenshotTest extends BaseTest {
         // Get a screenshot of the drafts feature
         screenshotPostWithName("Ideas", "6-capture-ideas-on-the-go", false);
 
+        // Get a screenshot of the drafts feature
+        screenshotPostWithName("Summer Band Jam", "7-create-beautiful-posts-and-pages", true);
+
         // Exit back to the main activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
     }
@@ -149,8 +152,6 @@ public class WPScreenshotTest extends BaseTest {
 
         // Wait for the editor to load all images
         idleFor(5000);
-
-        clickOn(R.id.post_title);
 
         if (hideKeyboard) {
             Espresso.closeSoftKeyboard();
