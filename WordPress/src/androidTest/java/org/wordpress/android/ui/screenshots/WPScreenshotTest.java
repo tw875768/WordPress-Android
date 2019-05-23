@@ -151,6 +151,8 @@ public class WPScreenshotTest extends BaseTest {
         clickOn(R.id.row_stats);
 
         // Wait for the stats to load
+        selectItemWithTitleInTabLayout("Years", R.id.tabLayout);
+        waitForAtLeastOneElementWithIdToBeDisplayed(R.id.chart);
         waitForAtLeastOneElementWithIdToBeDisplayed(R.id.stats_block_list);
 
         Screengrab.screenshot("3-track-what-your-visitors-love");
