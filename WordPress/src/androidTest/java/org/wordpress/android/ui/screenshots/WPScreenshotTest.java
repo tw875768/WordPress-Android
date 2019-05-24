@@ -133,6 +133,9 @@ public class WPScreenshotTest extends BaseTest {
         // Get a screenshot of the drafts feature
         screenshotPostWithName("Summer Band Jam", "7-create-beautiful-posts-and-pages", true);
 
+        // Get a screenshot for "write without compromises"
+        screenshotPostWithName("Book Your Summer Sessions", "8-book-your-summer-sessions", true);
+
         // Exit back to the main activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
     }
