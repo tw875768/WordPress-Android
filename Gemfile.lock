@@ -1,10 +1,7 @@
 GIT
   remote: https://github.com/wordpress-mobile/release-toolkit
-  revision: 4cb483edb43270ce77fb867332296820549236df
-  specs:
-
-PATH
-  remote: ../release-toolkit
+  revision: c50d7d4495a429dde91f83a52a93fef0b5c470e6
+  branch: integrate-screenshot-tool
   specs:
     fastlane-plugin-wpmreleasetoolkit (0.1.9)
       diffy (~> 3.3)
