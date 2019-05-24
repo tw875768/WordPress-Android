@@ -20,19 +20,19 @@
 			"name": "Nexus 9",
 			"canvas_size": [3000,2000],
 			"text_size": [3000, 317],
-			"text_offset": [0, 48],
-			"font_size": "70px",
+			"text_offset": [0, 0],
+			"font_size": "90px",
 			"screenshot_size": [2107, 1581],
-			"screenshot_offset": [446, 520],
+			"screenshot_offset": [446, 424],
 			"device_frame": "playstoreres/assets/nexus-9.svg",
 			"device_frame_size": [2642, 1778],
-			"device_frame_offset": [179, 419]
+			"device_frame_offset": [179, 323]
 		}
 	],
 	"entries": [
 		{
 			"device": "Pixel 2 XL",
-			"text": "playstoreres/metadata/%s/play_store_screenshot_1.html",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_7.html",
 			"screenshot": "images/phoneScreenshots/1-build-and-manage-your-website.png",
 			"background": "playstoreres/assets/backgrounds/01-background-phone.png",
 			"attachments": [
@@ -126,6 +126,98 @@
 					"size": [966,215],
 					"position": [57, 1238]
 				}
+			]
+		},
+		// Build and manage your website
+		{
+			"device": "Nexus 9",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_7.html",
+			"screenshot": "images/tenInchScreenshots/1-build-and-manage-your-website.png",
+			"background": "playstoreres/assets/backgrounds/01-background-tablet.png",
+			"attachments": [
+				{
+					"file": "playstoreres/assets/attachments/01-tablet-website.png",
+					"size": [2107, 1581],
+					"position": [446, 424]
+				}
+			]
+		},
+		// Create beautiful posts and pages
+		{
+			"device": "Nexus 9",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_1.html",
+			"screenshot": "images/tenInchScreenshots/7-create-beautiful-posts-and-pages.png",
+			"filename": "images/tenInchScreenshots/7-create-beautiful-posts-and-pages.png",
+			"background": "playstoreres/assets/backgrounds/02-background-tablet.png",
+			"attachments": [
+				{
+					"file": "playstoreres/assets/attachments/02-top-image-tablet.png",
+					"size": [1299, 782],
+					"position": [850, 1048]
+				},
+				{
+					"file": "playstoreres/assets/attachments/gutenberg-toolbar-tablet.png",
+					"size": [2107, 100],
+					"position": [446, 1803]
+				}
+			]
+		},
+		// Track what your visitors love
+		{
+			"device": "Nexus 9",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_2.html",
+			"screenshot": "images/tenInchScreenshots/3-track-what-your-visitors-love.png",
+			"background": "playstoreres/assets/backgrounds/03-background-tablet.png",
+			"attachments": [
+				{
+					"file": "playstoreres/assets/attachments/03-stats-tablet.png",
+					"size": [1642, 925],
+					"position": [679, 694]
+				}
+			]
+		},
+		// Check what's happening in real-time
+		{
+			"device": "Nexus 9",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_3.html",
+			"screenshot": "images/tenInchScreenshots/4-check-whats-happening-in-real-time.png",
+			"background": "playstoreres/assets/backgrounds/04-background-tablet.png",
+			"attachments": [
+				{
+					"file": "playstoreres/assets/attachments/04-1-tablet.png",
+					"size": [1409, 297],
+					"position": [716, 697]
+				},
+				{
+					"file": "playstoreres/assets/attachments/04-2-tablet.png",
+					"size": [1409, 297],
+					"position": [838, 1077]
+				},
+				{
+					"file": "playstoreres/assets/attachments/04-3-tablet.png",
+					"size": [1409, 297],
+					"position": [756, 1430]
+				}
+			]
+		},
+		// Share from anywhere
+		{
+			"device": "Nexus 9",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_4.html",
+			"screenshot": "images/tenInchScreenshots/5-share-from-anywhere.png",
+			"background": "playstoreres/assets/backgrounds/05-background-tablet.png",
+			"attachments": [
+			
+			]
+		},
+		// Write without compromises
+		{
+			"device": "Nexus 9",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_4.html",
+			"screenshot": "images/tenInchScreenshots/5-share-from-anywhere.png",
+			"background": "playstoreres/assets/backgrounds/05-background-tablet.png",
+			"attachments": [
+			
 			]
 		}
 	]
