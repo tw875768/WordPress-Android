@@ -192,11 +192,12 @@ public class WPScreenshotTest extends BaseTest {
         clickOn(R.id.nav_sites);
         clickOn(R.id.row_stats);
 
-        // Wait for the stats to load
+        // Show the year view – it'll have the best layout
         selectItemWithTitleInTabLayout("Years", R.id.tabLayout);
-        waitForAtLeastOneElementWithIdToBeDisplayed(R.id.chart);
-        waitForAtLeastOneElementWithIdToBeDisplayed(R.id.stats_block_list);
 
+        // Wait for the stats to load
+        idleFor(5000);
+        
         Screengrab.screenshot("3-track-what-your-visitors-love");
 
         // Exit the Stats Activity
