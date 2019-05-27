@@ -114,9 +114,6 @@ public class WPScreenshotTest extends BaseTest {
     }
 
     private void editBlogPost() {
-        // Get a screenshot of the post editor
-        screenshotPostWithName("Summer Band Jam", "1-PostEditor", true);
-
         // Choose the "sites" tab in the nav
         clickOn(R.id.nav_sites);
 
@@ -142,7 +139,7 @@ public class WPScreenshotTest extends BaseTest {
         screenshotPostWithName("Summer Band Jam", "7-create-beautiful-posts-and-pages", true);
 
         // Get a screenshot for "write without compromises"
-        screenshotPostWithName("Book Your Summer Sessions", "8-book-your-summer-sessions", true);
+        screenshotPostWithName("Now Booking Summer Sessions", "8-book-your-summer-sessions", true);
 
         // Exit back to the main activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
