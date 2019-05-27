@@ -24,6 +24,7 @@ import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;
 
 import static org.wordpress.android.support.WPSupportUtils.clickOn;
 import static org.wordpress.android.support.WPSupportUtils.getCurrentActivity;
+import static org.wordpress.android.support.WPSupportUtils.getTranslatedString;
 import static org.wordpress.android.support.WPSupportUtils.idleFor;
 import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
 import static org.wordpress.android.support.WPSupportUtils.populateTextField;
@@ -62,8 +63,9 @@ public class WPScreenshotTest extends BaseTest {
         // Enable Demo Mode
         mDemoModeEnabler.enable();
 
-        wpLogin();
+        tmpWPLogin();
 
+        idleFor(1000);
         Screengrab.screenshot("1-build-and-manage-your-website");
 
         editBlogPost();
@@ -123,6 +125,12 @@ public class WPScreenshotTest extends BaseTest {
 
         (new SitePickerPage()).chooseSiteWithURL("infocusphotographers.com");
 
+        // Choose "Blog Posts"
+        scrollToThenClickOn(R.id.row_blog_posts);
+
+        // Choose "Drafts"
+        selectItemWithTitleInTabLayout(getTranslatedString(R.string.post_list_drafts), R.id.tabLayout);
+
         // Get a screenshot of the writing feature (without image)
         String name = "2-create-beautiful-posts-and-pages";
         screenshotPostWithName("Time to Book Summer Sessions", name, false);
@@ -141,14 +149,9 @@ public class WPScreenshotTest extends BaseTest {
     }
 
     private void screenshotPostWithName(String name, String screenshotName, boolean hideKeyboard) {
-        // Click on the "Blog Posts" row
-        scrollToThenClickOn(R.id.row_blog_posts);
-
-        // Wait for the blog posts to load, then edit the first post
-        selectItemWithTitleInTabLayout("Drafts", R.id.tabLayout);
-
         idleFor(2000);
 
+        PostsListPage.scrollToTop();
         PostsListPage.tapPostWithName(name);
 
         waitForElementToBeDisplayed(R.id.editor_activity);
@@ -161,7 +164,7 @@ public class WPScreenshotTest extends BaseTest {
         }
 
         takeScreenshot(screenshotName);
-        pressBackUntilElementIsDisplayed(R.id.row_blog_posts);
+        pressBackUntilElementIsDisplayed(R.id.tabLayout);
     }
 
     private void manageMedia() {
