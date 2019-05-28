@@ -55,6 +55,12 @@
 			"background": "playstoreres/assets/backgrounds/02-background-phone.png",
 			"attachments": [
 				{
+					"file": "playstoreres/assets/attachments/phone-white-keyboard-with-status-bar.png",
+					"size": [742, 560],
+					"position": [169, 1360]
+					
+				},
+				{
 					"file": "playstoreres/assets/attachments/02-gutenberg-toolbar.png",
 					"size": [967, 194],
 					"position": [57, 1226]
@@ -151,11 +157,6 @@
 			"background": "playstoreres/assets/backgrounds/02-background-tablet.png",
 			"attachments": [
 				{
-					"file": "playstoreres/assets/attachments/02-top-image-tablet.png",
-					"size": [1299, 782],
-					"position": [850, 1048]
-				},
-				{
 					"file": "playstoreres/assets/attachments/gutenberg-toolbar-tablet.png",
 					"size": [2107, 100],
 					"position": [446, 1803]
@@ -207,17 +208,30 @@
 			"screenshot": "images/tenInchScreenshots/5-share-from-anywhere.png",
 			"background": "playstoreres/assets/backgrounds/05-background-tablet.png",
 			"attachments": [
-			
+				{
+					"file": "playstoreres/assets/attachments/share-from-anywhere-tablet-photos.png",
+					"size": [2309, 1353],
+					"position": [336, 519]
+				}
 			]
 		},
 		// Write without compromises
 		{
 			"device": "Nexus 9",
-			"text": "playstoreres/metadata/%s/play_store_screenshot_4.html",
-			"screenshot": "images/tenInchScreenshots/5-share-from-anywhere.png",
+			"text": "playstoreres/metadata/%s/play_store_screenshot_6.html",
+			"screenshot": "images/tenInchScreenshots/8-book-your-summer-sessions.png",
 			"background": "playstoreres/assets/backgrounds/05-background-tablet.png",
 			"attachments": [
-			
+				{
+					"file": "playstoreres/assets/attachments/08-screen.png",
+					"size": [2107, 1414],
+					"position": [446, 586]
+				},
+				{
+					"file": "playstoreres/assets/attachments/aztec-toolbar-overlay-tablet.png",
+					"size": [966, 194],
+					"position": [351, 1077]
+				}
 			]
 		}
 	]
