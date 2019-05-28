@@ -139,7 +139,7 @@ public class WPScreenshotTest extends BaseTest {
         screenshotPostWithName("Summer Band Jam", "7-create-beautiful-posts-and-pages", true);
 
         // Get a screenshot for "write without compromises"
-        screenshotPostWithName("Now Booking Summer Sessions", "8-book-your-summer-sessions", true);
+        screenshotPostWithName("Now Booking Summer Sessions", "8-write-without-compromises", true);
 
         // Exit back to the main activity
         pressBackUntilElementIsDisplayed(R.id.nav_sites);
