@@ -216,7 +216,6 @@ public class WPSupportUtils {
     }
 
     public static void scrollToTopOfRecyclerView(final RecyclerView recyclerView) {
-
         // Prevent java.lang.IllegalStateException:
         // Cannot call this method while RecyclerView is computing a layout or scrolling
         waitForConditionToBeTrue(new Supplier<Boolean>() {
